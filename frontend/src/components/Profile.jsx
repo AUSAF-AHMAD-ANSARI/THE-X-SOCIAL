@@ -65,9 +65,22 @@ const Profile = () => {
               <div className='flex flex-col gap-1'>
                 <span className='font-semibold'>{userProfile?.bio || 'bio here...'}</span>
                 <Badge className='w-fit' variant='secondary'><AtSign /> <span className='pl-1'>{userProfile?.username}</span> </Badge>
-                <span>🤯Learn code with patel mernstack style</span>
-                <span>🤯Turing code into fun</span>
-                <span>🤯DM for collaboration</span>
+                <div className="flex flex-col gap-3 text-sm text-slate-700 dark:text-moonlight-200">
+  <span>🌌 Believer in <span className="font-semibold text-rose-700 dark:text-rose-300">code as poetry</span> & <span className="italic">bug-free dreams</span></span>
+  
+  <span>📖 Storyteller weaving <span className="font-mono bg-stone-100 dark:bg-night-800 px-1.5 py-0.5 rounded">
+    {`<digital campfire tales/>`}
+  </span></span>
+
+  <span>🌱 Growing my <span className="relative group">
+    <span className="text-emerald-700 dark:text-jade-300">digital garden</span>
+    <div className="absolute -bottom-0.5 left-0 w-0 group-hover:w-full h-0.5 bg-emerald-500 transition-all duration-300"></div>
+  </span> → 
+    <a href="/philosophy" className="ml-1.5 text-sky-600 hover:text-sky-700 dark:text-lagoon-300">
+      Water my thoughts
+    </a>
+  </span>
+</div>
               </div>
             </div>
           </section>
